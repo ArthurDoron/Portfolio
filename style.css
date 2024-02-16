@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 10px 0;
+    transition: top 0.3s;
+}
+
+nav {
+    width: 100%;
+    overflow: auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0 0 0 150px;
+    list-style-type: none;
+}
+
+li {
+    float: right;
+}
+
+.logo img {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 50px;
+    width: 150px;
+    height: 90px;
+}
+
+nav a {
+    width: 100px;
+    display: block;
+    padding: 40px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: cursive;
+    color: white;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+#home {
+    font-family: cursive;
+    background-color: black;
+    color: white;
+    padding: 180px 0 300px;
+}
+
+.homeCon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.HomeFLDIV {
+    text-align: left;
+    margin-left: 150px;
+}
+
+.intro {
+    position: relative;
+    top: 50px;
+    left: 0;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.name {
+    font-family: Georgia, serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+}
+
+.position {
+    font-family: cursive;
+    color: white;
+    margin-top: 10px;
+    position: relative;
+    top: -50px;
+    left: 0;
+    font-size: 25px;
+}
+
+.position span {
+    font-weight: bold;
+    color: yellow;
+}
+
+.info {
+    font-size: 15px;
+    color: White;
+    margin-top: -30px;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 2px solid white;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons a:hover {
+    background-color: orange;
+}
+
+#home {
+    background-image: url(Picture.png);
+    background-repeat: no-repeat;
+    background-position: right -100px top 50px;
+    background-size: 50%;
+}
+
+/* End of Home CSS */
+#about {
+    display: flex;
+    align-items: center;
+    max-width: 1500px;
+}
+
+.sideimage {
+    position: relative;
+    top: -100px;
+    left: 100px;
+    width: 400px; 
+    height: 500px;
+    order: -1;
+}
+
+.about-content {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.infoAbout{
+    position: relative;
+    font-size: 15px;
+    font-family: cursive;
+    left: 100px;
+    top: -100px;
+}
+
+h1 {
+    position: relative;
+    top: -150px;
+    left: 250px;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.pos {
+    position: relative;
+    font-family: cursive;
+    font-size: 25px;
+    top: -100px;
+    left: 100px;
+}
+
+.pos span {
+    color: yellow;
+}
+
+.introAbout {
+    position: relative;
+    font-family: cursive;
+    font-size: 25px;
+    top: -100px;
+    left: 100px;
+
+}
+
+.language {
+    position: relative;
+    width: 200px; 
+    height: 150px;
+    top: -100px;
+    left: 100px;
+    order: -1;
+}
+
+
+
+
+
+
+
+

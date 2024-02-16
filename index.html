@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <header>
+        <div class="logo"><a href = "#"><img src="logo.jpeg"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#home">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div class="homeCon">
+            <div class="HomeFLDIV">
+                <p class="intro">HELLO! IT'S ME</p>
+                <p class="name">Arthur Doron</p>
+                <p class="position">
+                    And I'm a
+                    <span>Student!</span>
+                </p>
+                <p class="info">
+                    A dynamic and driven individual on a quest for proficiency in HTML, CSS, JavaScript, and PostgreSQL.</br>
+                    Armed with a thirst for knowledge and a passion for coding, they delve into the intricacies of front-end</br>
+                    and back-end development with zeal. From crafting visually stunning web layouts with HTML and CSS to</br>
+                    implementing interactive functionalities with JavaScript, their journey is one of continuous exploration</br>
+                    and growth. Moreover, their pursuit extends to database management, where they harness the power of</br>
+                    PostgreSQL to store, retrieve, and manipulate data seamlessly. With each line of code, they inch closer to</br>
+                    becoming a proficient and versatile developer.
+                </p>
+               <div class="buttons"> 
+                <a href="#" id="CV_btn">DOWNLOAD CV</a>
+                <a href="#" id="contact_btn">CONTACT ME</a>
+               </div>
+            </div>
+            <div class="HLRDIV"></div>
+        </div>    
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            <h1>{ABOUT ME}</h1>
+            <p class="introAbout">Hi, My name is Arthur A. Doron</p>
+            <p class="pos">and I’m a <span>Student!</span></p>
+            <p class="infoAbout">
+                During my third year of college, my journey into the tech industry commenced with the introduction to two 
+                formidable</br>
+                tools: PostgreSQL and HTML. Initially, coding appeared as a labyrinthine puzzle, daunting yet alluring. 
+                However, as I</br>
+                delved into the
+                fundamentals,a realization dawned upon me—I glimpsed the immense potential and 
+                exhilaration inherent </br>in coding.</br></br>
+                
+                PostgreSQL unveiled the art of efficient data organization and manipulation, 
+                while HTML bestowed upon me the power to</br> craft and
+                disseminate content across the vast expanse of the web. These revelations kindled a fervent passion within me,</br> 
+                igniting a newfound
+                drive for exploration and mastery in this dynamic field.
+            </p>
+            <img src="html.png" alt="html" class="language">
+            <img src="postgresql.png" alt="postgresql" class="language">
+            <img src="php.png" alt="php" class="language">
+            <img src="python.png" alt="python" class="language">
+        </div>
+        <img src="Picture2.jpg" alt="Arthur" class="sideimage">
+    </section>
+
+
+
+
+    <script>
+        let prevScrollPos = window.pageYOffset;
+
+        window.onscroll = function() {
+            let currentScrollPos = window.pageYOffset;
+            if (prevScrollPos > currentScrollPos) {
+                document.getElementById("header").style.top = "0";
+            } else {
+                document.getElementById("header").style.top = "0px"; 
+            }
+            prevScrollPos = currentScrollPos;
+        }
+    </script>
+</body>
+</html>
