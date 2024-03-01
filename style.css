@@ -1,81 +1,115 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     background: black;
     color: white;
+    overflow-x: hidden;
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
     position: fixed;
     top: 0;
     width: 100%;
-    color: white;
+    z-index: 1000;
     background-color: black;
-    padding: 10px 0;
-    transition: top 0.3s;
+    padding: 1rem;
+    
 }
 
-nav {
-    width: 100%;
-    overflow: auto;
-}
-
-ul {
-    padding: 0;
-    margin: 0 0 0 150px;
-    list-style-type: none;
+.navContainer {
+    display: flex;
+    align-items: center;
+    padding-right: 5rem;
 }
 
 li {
-    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.navMenu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap: 2.5rem;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    }
+
+.nav-menu__link {
+    text-decoration: none;
+    color: white;
+    font-family: cursive;
+
+}
+
+.nav-menu__link:hover,
+.nav-menu__link:active {
+    color: orange;
+    transition: all 0.3s;
+}
+
+.mobile-nav__link {
+    font-family: cursive;
+}
+
+.mobile-nav__link:hover,
+.mobile-nav__link:active {
+    color: orange;
+    transition: all 0.3s;
+}
+
+
+
+
 .logo img {
-    position: absolute;
-    margin-top: 15px;
-    margin-left: 50px;
+
     width: 150px;
     height: 90px;
 }
 
-nav a {
-    width: 100px;
-    display: block;
-    padding: 40px;
-    margin-top: 15px;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: cursive;
-    color: white;
-    text-align: center;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: orange;
-}
 
 #home {
     font-family: cursive;
     background-color: black;
     color: white;
-    padding: 180px 0 300px;
+    padding: 180px 0 180px;
+    width: 100dvw;
 }
 
 .homeCon {
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .HomeFLDIV {
     text-align: left;
-    margin-left: 150px;
+    margin-left: 5rem;
+    width: 60%;
+    
 }
 
 .intro {
     position: relative;
-    top: 50px;
+    top: -10px;
     left: 0;
     font-size: 25px;
     font-family: sans-serif;
@@ -92,9 +126,7 @@ nav a:hover {
     font-family: cursive;
     color: white;
     margin-top: 10px;
-    position: relative;
-    top: -50px;
-    left: 0;
+    margin-bottom: 30px;
     font-size: 25px;
 }
 
@@ -106,14 +138,13 @@ nav a:hover {
 .info {
     font-size: 15px;
     color: White;
-    margin-top: -30px;
 }
 
-.buttons {
+.bttn {
     margin-top: 30px;
 }
 
-.buttons a {
+.bttn a {
     display: inline-block;
     padding: 10px 20px;
     background-color: transparent;
@@ -126,62 +157,58 @@ nav a:hover {
     transition: background-color 0.3s ease;
 }
 
-.buttons a:hover {
+.bttn a:hover {
     background-color: orange;
 }
 
-#home {
+.HLRDIV {
     background-image: url(Picture.png);
     background-repeat: no-repeat;
-    background-position: right -100px top 50px;
-    background-size: 50%;
+    background-size: 100% 100%;
+    width: 40%;
+    height: 30rem;
 }
 
 /* End of Home CSS */
+
 #about {
     display: flex;
     align-items: center;
-    max-width: 1500px;
+    justify-content: center;
+    flex-direction: row-reverse;
+    width: 100dvw;
+    padding-top: 10rem;
+    margin-bottom: 15rem;
 }
 
 .sideimage {
-    position: relative;
-    top: -100px;
-    left: 100px;
-    width: 400px; 
-    height: 500px;
-    order: -1;
+    width: 30%; 
+    background-size: 100% 100%;
+    height: 30rem;
+    margin-right: 30px;
 }
 
 .about-content {
-    flex: 1;
-    padding-left: 20px;
+    width: 55%;
+
 }
 
 .infoAbout{
-    position: relative;
     font-size: 15px;
     font-family: cursive;
-    left: 100px;
-    top: -100px;
+    margin-top: 30px;
+    
 }
 
 h1 {
-    position: relative;
-    top: -150px;
-    left: 250px;
     font-family: cursive;
     font-weight: bold;
     font-size: 30px;
-
 }
 
 .pos {
-    position: relative;
     font-family: cursive;
     font-size: 25px;
-    top: -100px;
-    left: 100px;
 }
 
 .pos span {
@@ -189,27 +216,332 @@ h1 {
 }
 
 .introAbout {
-    position: relative;
     font-family: cursive;
     font-size: 25px;
-    top: -100px;
-    left: 100px;
+    margin-top: 50px;
+
+}
+
+.lang-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
 
 }
 
 .language {
+    width: 8rem;
+    height: 8rem;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* end of about CSS */
+
+.headings {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.prjcts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 15rem;
+    width: 100%;
+    padding-top: 10rem;
+}
+
+.prjcts-content {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.prjcts-content h2 {
+    text-align: left !important;
+    line-height: 1.5;
+    align-self: first baseline;
+}
+
+.prjcts-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 30px;
+}
+
+h3 {
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.prjcts-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20rem;
+    height: 20rem;
+}
+
+
+.prjcts-item h3 {
+    font-size: 1.5rem;
+}
+
+
+ 
+
+.prjct-image {
+    width: 15rem;
+    height: 40rem;
+    border-radius: 30px;
+    background-size: 100% 100%;
+}
+
+  .buttons {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    line-height: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 11px 15px 12px;
+    text-align: center;
+    transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    opacity: 1; 
+  }
+  
+  .buttons:hover {
+    box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+    text-decoration: none;
+    transition-duration: .15s, .15s;
+  }
+  
+  .buttons:active {
+    box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+  }
+  
+  .buttons:disabled {
+    cursor: not-allowed;
+    opacity: .6;
+  }
+  
+  .buttons:disabled:active {
+    pointer-events: none;
+  }
+  
+  .buttons:disabled:hover {
+    box-shadow: none;
+  }
+
+
+  /* end of project css */
+
+.heading {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 5rem;
+    width: 100%;
+    padding-top: 10rem;
+
+}
+
+.contact-content {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-content h2 {
+    text-align: left !important;
+    line-height: 1.5;
+    align-self: first baseline;
+}
+
+.contact-content form {
+    width: 40dvw;
+    height: 60dvh;
+    background-color: black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.contact-content form label {
+    font-size: 1.5rem;
+    text-align: left !important;
+    line-height: 1.5;
+    align-self: first baseline;
+}
+
+.contact-content form input {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 15px;
+}
+
+textarea {
+    resize: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    flex: 1 1 auto;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+}
+
+
+.contact-content form label {
+    text-align: start;
+}
+
+
+.mobileNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.mobile-nav__menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    
+}
+
+.mobile-nav__link {
+    font-size: var(--size-lg);
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-color);
+    letter-spacing: 0.05em;
+    transition: color 0.3s;
+    
+}
+
+.mob-line {
+    border: 1px solid var(--text-color);
+    padding-left: 3em;
+}
+
+.mobile-nav__link:hover,
+.mobile-nav__link:active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+    transition: color 0.3s;
+}
+
+.navBar {
+    display: none !important;
+    align-items: center;
+    color: white;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    display: block;
+    padding: 0;
+    border: none;
     position: relative;
-    width: 200px; 
-    height: 150px;
-    top: -100px;
-    left: 100px;
-    order: -1;
+    z-index: 9999;
+    margin-right: 4rem;
+}
+
+.navBar:hover {
+    color: blue;
+    transition: color 0.3s;
 }
 
 
 
+@media (max-width: 950px) {
+    .navBar {
+        display: flex !important;
+    }
+
+    .navContainer {
+        display: none;
+    }
+    .HLRDIV {
+        display: none;
+    }
+
+    .sideimage {
+        display: none;
+    }
+    .contact-content form {
+        width: 80dvw;
+    }
+
+    .HomeFLDIV {
+        margin: 0;
+    }
 
 
+}
 
 
-
+@media (max-width: 950px) {
+    .language {
+    display: none;
+    }
+}
