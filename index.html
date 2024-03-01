@@ -11,15 +11,47 @@
     <header>
         <div class="logo"><a href = "#"><img src="logo.jpeg"></a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">PROJECTS</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#home">HOME</a></li>
+        <div class="navContainer">
+            <ul class="navMenu">
+                <li> 
+                    <a class="nav-menu__link" href="#home"> Home </a>
+                </li>
+                <li>
+                    <a class="nav-menu__link" href="#about"> About Me </a>
+                </li>
+                <li>
+                    <a class="nav-menu__link" href="#prjcts"> Projects </a>
+                </li>
+                <li>
+                    <a class="nav-menu__link" href="#contacts"> Contact </a>
+                </li>
+                
             </ul>
-        </nav>
+        </div>
+        <button class="navBar"> 
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+<path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+</svg>
+        </button>
     </header>
+
+    <div class="mobileNav">
+        <ul class="mobile-nav__menu">
+            <li> 
+                <a class="mobile-nav__link" href="#home"> Home </a>
+            </li>
+            <li>
+                <a class="mobile-nav__link" href="#about"> About Me </a>
+            </li>
+            <li>
+                <a class="mobile-nav__link" href="#prjcts"> Projects </a>
+            </li>
+            <li>
+                <a class="mobile-nav__link" href="#contacts"> Contact </a>
+            </li>
+            
+        </ul>
+    </div>
     
     <section id="home">
         <div class="homeCon">
@@ -31,18 +63,17 @@
                     <span>Student!</span>
                 </p>
                 <p class="info">
-                    A dynamic and driven individual on a quest for proficiency in HTML, CSS, JavaScript, and PostgreSQL.</br>
-                    Armed with a thirst for knowledge and a passion for coding, they delve into the intricacies of front-end</br>
-                    and back-end development with zeal. From crafting visually stunning web layouts with HTML and CSS to</br>
-                    implementing interactive functionalities with JavaScript, their journey is one of continuous exploration</br>
-                    and growth. Moreover, their pursuit extends to database management, where they harness the power of</br>
-                    PostgreSQL to store, retrieve, and manipulate data seamlessly. With each line of code, they inch closer to</br>
+                    A dynamic and driven individual on a quest for proficiency in HTML, CSS, JavaScript, and PostgreSQL.
+                    Armed with a thirst for knowledge and a passion for coding, they delve into the intricacies of front-end
+                    and back-end development with zeal. From crafting visually stunning web layouts with HTML and CSS to
+                    implementing interactive functionalities with JavaScript, their journey is one of continuous exploration
+                    and growth. Moreover, their pursuit extends to database management, where they harness the power of
+                    PostgreSQL to store, retrieve, and manipulate data seamlessly. With each line of code, they inch closer to
                     becoming a proficient and versatile developer.
                 </p>
-               <div class="buttons"> 
-                <a href="#" id="CV_btn">DOWNLOAD CV</a>
-                <a href="#" id="contact_btn">CONTACT ME</a>
-               </div>
+                <div class="bttn"> 
+                    <a href="#contacts" id="contact_btn" class="btn1">CONTACT ME</a>
+                </div>
             </div>
             <div class="HLRDIV"></div>
         </div>    
@@ -50,47 +81,96 @@
 
     <section id="about">
         <div class="about-content">
-            <h1>{ABOUT ME}</h1>
+            <h1 id="headings">{ABOUT ME}</h1>
             <p class="introAbout">Hi, My name is Arthur A. Doron</p>
             <p class="pos">and I’m a <span>Student!</span></p>
             <p class="infoAbout">
                 During my third year of college, my journey into the tech industry commenced with the introduction to two 
-                formidable</br>
-                tools: PostgreSQL and HTML. Initially, coding appeared as a labyrinthine puzzle, daunting yet alluring. 
-                However, as I</br>
-                delved into the
-                fundamentals,a realization dawned upon me—I glimpsed the immense potential and 
-                exhilaration inherent </br>in coding.</br></br>
-                
-                PostgreSQL unveiled the art of efficient data organization and manipulation, 
-                while HTML bestowed upon me the power to</br> craft and
-                disseminate content across the vast expanse of the web. These revelations kindled a fervent passion within me,</br> 
-                igniting a newfound
-                drive for exploration and mastery in this dynamic field.
+                formidabletools: PostgreSQL and HTML. Initially, coding appeared as a labyrinthine puzzle, daunting yet alluring. 
+                However, as I delved into the fundamentals,a realization dawned upon me—I glimpsed the immense potential and 
+                exhilaration inherent in coding. PostgreSQL unveiled the art of efficient data organization and manipulation, 
+                while HTML bestowed upon me the power to craft and disseminate content across the vast expanse of the web. These 
+                revelations kindled a fervent passion within me, igniting a newfound drive for exploration and mastery in this dynamic
+                field.
             </p>
-            <img src="html.png" alt="html" class="language">
-            <img src="postgresql.png" alt="postgresql" class="language">
-            <img src="php.png" alt="php" class="language">
-            <img src="python.png" alt="python" class="language">
+            <div class="lang-container">
+                <img src="html.png" alt="html" class="language">
+                <img src="postgresql.png" alt="postgresql" class="language">
+                <img src="php.png" alt="php" class="language">
+                <img src="python.png" alt="python" class="language">
+            </div>
+            
         </div>
-        <img src="Picture2.jpg" alt="Arthur" class="sideimage">
+        <div class="sideimage" style="background-image: url(Picture2.jpg);">
+        </div>
     </section>
 
 
+    <section class="prjcts container section" id="prjcts">
+        <div class="prjcts-content">
+            <h1 class="heading"> {PROJECTS} </h1>
+            <div class="prjcts-container">
+                <div class="prjcts-item">
+                    <h3> colorChanger() </h3>
+                    <div class="prjct-image" style="background-image: url('project1.png');">
+                    </div>
+                    <div class="btns">
+                        <a href="https://arthurdoron.github.io/HandsOn2-colorChanger-WS101/"> <button class="buttons"> View </button> </a>
+                        <a href="https://github.com/ArthurDoron/HandsOn2-colorChanger-WS101"> <button class="buttons"> Code </button> </a>
+                    </div>
+                    
+                </div>
 
+                <div class="prjcts-item">
+                    <h3> AddEventListiner() </h3>
+                    <div class="prjct-image" style="background-image: url('project2.png');">
+                    </div>
+                    <div class="btns">
+                        <a href="https://arthurdoron.github.io/HandsOn1-addEventListener-WS101/"> <button class="buttons"> View </button> </a>
+                        <a href="https://github.com/ArthurDoron/HandsOn1-addEventListener-WS101"> <button class="buttons"> Code </button> </a>
+                    </div>
+                </div>
 
-    <script>
-        let prevScrollPos = window.pageYOffset;
+                <div class="prjcts-item">
+                    <h3> Landing Page </h3>
+                    <div class="prjct-image" style="background-image: url('project3.png');">
+                    </div>
+                    <div class="btns">
+                        <a href="https://arthurdoron.github.io/landing-page/"> <button class="buttons"> View </button> </a>
+                        <a href="https://github.com/ArthurDoron/landing-page"> <button class="buttons"> Code </button> </a>
+                    </div>
+                </div>
 
-        window.onscroll = function() {
-            let currentScrollPos = window.pageYOffset;
-            if (prevScrollPos > currentScrollPos) {
-                document.getElementById("header").style.top = "0";
-            } else {
-                document.getElementById("header").style.top = "0px"; 
-            }
-            prevScrollPos = currentScrollPos;
-        }
-    </script>
+                <div class="prjcts-item">
+                    <h3> Calculator </h3>
+                    <div class="prjct-image" style="background-image: url('project4.png');">
+                    </div>
+                    <div class="btns">
+                        <a href="https://arthurdoron.github.io/calculaator/"> <button class="buttons"> View </button> </a>
+                        <a href="https://github.com/ArthurDoron/calculaator"> <button class="buttons"> Code </button> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contact container section">
+        <div class="contact-content">
+            <h1 class="heading"> {CONTACT} </h1>
+            <form>
+                <label> Name </label>
+                <input type="text" placeholder="Enter your name here" required>
+                <label> Email </label>
+                <input type="text" placeholder="Enter your email" required>
+                <label> Message </label>
+                <textarea placeholder="Type your message..." required></textarea>
+                <input id="submit" type="submit" class="button-25" value="Submit">
+
+            </form>
+        </div>
+
+    </section>
+
+<script src="main.js"></script>
 </body>
 </html>
